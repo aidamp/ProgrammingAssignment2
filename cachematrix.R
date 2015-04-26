@@ -1,7 +1,7 @@
 ## Catching the Inverse of a Matrix
 
-## The makeCacheMatrix will set and get the value of the matrix. 
-## Also, it will get and set the inverse of the matrix.
+## The makeCacheMatrix function will set and get the value of a matrix. 
+## Also, it will get and set the inverse of the matrix when needed.
 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL
@@ -21,8 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The following function calculates the inverse of the matrix created with the 
-## makeCacheMatrix function. If the calculation already exists it will get it from
-## the cache data, otherwise it will calculate it.
+## makeCacheMatrix function. If the calculation already exists it will get the
+## inverse from the cache data, otherwise it will calculate it.
 
 cacheSolve <- function(x, ...) {
     i <- x$getinverse()
